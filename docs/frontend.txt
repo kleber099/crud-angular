@@ -1,0 +1,40 @@
+# Instalação cli angular
+ - npm i -g @angular/cli
+ -g significa que vai instalar de maneira global na maquina do usuário.
+
+# Criar projeto angular
+  - ng new frontend --minimal
+  --minimal que dizer que vai criar uma  estrutura de projeto básico, por exemplo sem testes.
+
+# Configurações do projeto
+ # Os templates html e css devem ser arquivos separados com componente e não dentro do próprio componente. Alterar no arquivo angular.json:
+  "inlineTemplate": false,
+  "inlineStyle": false,
+
+# Adicionando Modulo @angular/material
+ Temos diversos componentes já prontos para angular
+ # Instalação
+  - ng add @angular/material
+  # Configurações de instalação
+   ? Choose a prebuilt theme name, or "custom" for a custom theme:
+    ❯ Indigo/Pink        [ Preview: https://material.angular.io?theme=indigo-pink ]
+   ? Set up global Angular Material typography styles? y
+    ❯ Include and enable animations
+
+# Criando um componente em Angular
+ - ng g c components/template/header
+ g significa gerar
+ c componente
+
+ # Criando uma diretiva em Angular
+  - ng g d directives/for
+
+# Criando um service em Angular
+ - ng g s components/product/product
+
+ # Schematic
+  Recurso do material angula para criar componentes e fluxos pre pronto e comuns em aplicações.
+  # criar componente a partir do schematic de table
+    - ng g @angular/material:table product-list-table
+    
+

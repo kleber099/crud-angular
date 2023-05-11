@@ -1,0 +1,15 @@
+# Criar um projeto npm:
+ - npm init -y
+   O parametro -y responde as perguntas como primeira opção.
+
+# pacote json-server
+ # Instalação
+  - npm i json-server 
+ # Comando para executar o backend json-server
+  - json-server --watch db.json  --port 3001
+ # Definir script em package.json
+   "scripts": {
+    "start": "json-server --watch db.json  --port 3001"
+  },
+ # Executar o comando criado
+  - npm start
